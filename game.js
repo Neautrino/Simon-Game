@@ -62,8 +62,9 @@ function checkAnswer(curr){
 $(document).on("keypress click",function(){
     if(toggle===true){
         toggle = false;
-        nextSequence();
-    }else{
-        playSound("wrong");
+        setTimeout(function(){
+
+            nextSequence();
+        },1000);
     }
 });
